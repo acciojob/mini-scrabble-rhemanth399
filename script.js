@@ -1,8 +1,8 @@
-let input=document.getElementById('evaluatedText')
-let letterCount=document.getElementById('letterCount')
-input.addEventListener('input',hemanth())
-function hemanth()
-	{
-		input.innerHTML=input.value
-		letterCount.innerHTML=input.length
-	}
+//your code here
+const textbox = document.getElementById('evaluatedText');
+const letterCountElement = document.getElementById('letterCount');
+
+textbox.addEventListener('keyup', function() {
+  const letterCount = textbox.value.length;
+  letterCountElement.innerHTML = letterCount;
+});
